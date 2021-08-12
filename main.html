@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Converter App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <br><br>
+            <h1 style="text-align: center;">Media Converter Using Electron JS</h1><br>
+            <h5 style="text-align: center;">(Desktop application to convert a mp4 video file to HLS(m3u8) video file using Electron JS and FFMPEG plugin)</h5><br>
+            <div class="form-group">
+                <label for="format">Selected Format:</label>
+                <select class="form-control" id="format">
+                  <option>m3u8</option>
+                </select>
+            </div>
+            <br>
+            <p>Select a mp4 video file to convert in to HLS format:</p>
+            <button class="btn btn-block btn-danger" id="upload">Select File & Convert</button>
+            <br><br>
+            <div id="info"></div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="renderer.js"></script>
+</html>
